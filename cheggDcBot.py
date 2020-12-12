@@ -1,6 +1,6 @@
 #####################################
-#	https://github.com/T4WW			#
-# 	https://github.com/alpkeskin	#
+#  https://github.com/T4WW	    #
+#  https://github.com/alpkeskin	    #
 #####################################
 
 import discord, re, requests, asyncio
