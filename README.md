@@ -22,4 +22,4 @@ Demo video link : https://streamable.com/0ix1wj
 
 
 ### Bitcoin wallet: 
-> 13NFfd1QXUVFsZzfbwGJiAJdehtPB9D88tK
+> 3NFfd1QXUVFsZzfbwGJiAJdehtPB9D88tK
