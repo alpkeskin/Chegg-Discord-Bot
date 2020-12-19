@@ -24,3 +24,5 @@ Demo video link : https://streamable.com/0ix1wj
 
 ### Bitcoin wallet: 
 > 3NFfd1QXUVFsZzfbwGJiAJdehtPB9D88tK
+
+**contact and join our server** : dada#3705
