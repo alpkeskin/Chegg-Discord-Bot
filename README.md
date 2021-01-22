@@ -1,3 +1,6 @@
+:bangbang: This code is no longer works. Only private code is working now. If you are seriously interested, you can reach me on Discord. `dada#3705` :bangbang:
+
+
 # Chegg-Discord-Bot
 Chegg bot for Discord.
 You can access chegg answers via discord.
@@ -24,5 +27,3 @@ Demo video link : https://streamable.com/0ix1wj
 
 ### Bitcoin wallet: 
 > 3NFfd1QXUVFsZzfbwGJiAJdehtPB9D88tK
-
-**contact and join our server** : dada#3705
