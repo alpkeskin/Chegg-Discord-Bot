@@ -1,4 +1,4 @@
-:bangbang: This code is no longer works. Only private code is working now. If you are seriously interested, you can reach me on Discord. `dada#3705` :bangbang:
+:bangbang: This code no longer works. Working code is now private. :bangbang:
 
 
 # Chegg-Discord-Bot
