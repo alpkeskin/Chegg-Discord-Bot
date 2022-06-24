@@ -1,8 +1,9 @@
 #####################################
 #  https://github.com/T4WW	    
 #  https://github.com/alpkeskin	    
-#####################################
 
+#####################################
+import os 
 import discord, re, requests, asyncio
 from discord.ext import commands
 from bs4 import BeautifulSoup
@@ -28,10 +29,10 @@ async def on_message(message):
 		chegglink = link[0]
 		try:
 			if(chegglink[0:22] == "https://www.chegg.com/"):
-				r = requests.get(link[0],headers={"user-agent":"SET YOUR USER AGENT HERE",
+				userRequest = requests.get(link[0],headers={"user-agent":"SET YOUR USER AGENT HERE",
 				"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
 				"cookie":"id_token= SET ID TOKEN HERE"})
-				source = BeautifulSoup(r.content,"html")
+				source = BeautifulSoup(userRequest.content,"html")
 				dmain = source.find("div",attrs={"class":"answer-given-body ugc-base"})
 				images = dmain.findAll('img')
 				for image in images:
@@ -44,9 +45,14 @@ async def on_message(message):
 				my_files = [discord.File('answer.txt')]
 				print(link[0])
 				await message.author.send(files=my_files)
+				exit(0)
 			else:
-	 			print("ERROR")
-	 	except:
-	 		pass
+	 			print("Link is not valid.")
+	 	except ValueError:
+	 		print("Unexpected value is given")
+			exit(1)
+		 except ConnectionError as ex:
+		     raise RuntimeError('Failed to establish connection to the given soruce') from ex
+			
 
 bot.run("!!! SET YOUR BOT TOKEN HERE !!!")
